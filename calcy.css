@@ -1,0 +1,26 @@
+#calcy {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 180px;
+    }
+    
+    #display {
+        margin: 10px;
+        width: 80%;
+        font-size: 23px;
+        color: green;
+        }
+    
+        .button-container {
+            display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           color: rgb(245, 13, 25);
+            }
+    
+        .button {
+            height: 45px;
+            width: 45px;
+            margin: 2px;
+            color: blue;
+            }
