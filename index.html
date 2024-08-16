@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calcy.css">
+    
+    <title>Calculator</title>
+</head>
+<center>
+<body>
+    <p style="color:red;"><marquee behavior="alternate">
+        <b>I'm Calculator. I can calculate simple Mathematics Operations.</b>
+   </marquee></p>
+    <div id="calcy">
+        <input type = "text" id="display" readonly placeholder="I'm Calculator">  
+        <div class="button-container">
+            <button class="button" onclick="Currentdisplay = '';
+             document.querySelector('#display').value=Currentdisplay">c</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'1';
+             document.querySelector('#display').value=Currentdisplay">1</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'2';
+             document.querySelector('#display').value=Currentdisplay">2</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'+';
+             document.querySelector('#display').value=Currentdisplay">+</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'3';
+             document.querySelector('#display').value=Currentdisplay">3</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'4';
+             document.querySelector('#display').value=Currentdisplay">4</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'-';
+             document.querySelector('#display').value=Currentdisplay">-</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'5';
+             document.querySelector('#display').value=Currentdisplay">5</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'6';
+             document.querySelector('#display').value=Currentdisplay">6</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'*';
+             document.querySelector('#display').value=Currentdisplay">*</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'7';
+             document.querySelector('#display').value=Currentdisplay">7</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'8';
+             document.querySelector('#display').value=Currentdisplay">8</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'/';
+             document.querySelector('#display').value=Currentdisplay">/</button>
+            <button class="button"onclick="
+            let result=eval(Currentdisplay)
+            Currentdisplay=result
+             document.querySelector('#display').value=Currentdisplay">=</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'9';
+             document.querySelector('#display').value=Currentdisplay">9</button>
+            <button class="button">0</button>
+            <button class="button" onclick="Currentdisplay = Currentdisplay +'.';
+             document.querySelector('#display').value=Currentdisplay">.</button>
+        </div>
+        <footer>
+            <p>Mohd Saqib @<span id="year"></span></p>
+          </footer>
+    </div>
+    <script src="calcy.js"></script>
+</body>
+</center>
+</html>
